@@ -1,0 +1,223 @@
+:root {
+    /* Colors */
+    --color-bg: rgb(218, 225, 233);
+
+
+    --color-footer: rgb(30, 42, 48);
+    --color-on-footer: rgb(128, 164, 181);
+    --color-on-footer-hover: rgb(81, 112, 127);
+    --color-on-footer-active: rgb(36, 73, 92);
+
+
+    --color-primary: rgb(121, 184, 163);
+    --color-on-primary: rgb(12, 68, 44);
+    --color-on-primary-hover: rgb(171, 54, 111);
+    --color-on-primary-active: rgb(211, 91, 151);
+
+    --color-secondary: rgb(121, 184, 163);
+    --color-on-secondary: rgb(12, 68, 44);
+    --color-on-secondary-hover: rgb(68, 12, 47);
+    --color-on-secondary-active: rgb(68, 12, 36);
+    --color-secondary-hover: rgb(201, 119, 158);
+    --color-secondary-active: rgb(233, 186, 210);
+
+    /* Spacing */
+    --spacing-small: 1rem;
+    --spacing-normal: 2rem;
+    --spacing-smaller: 0.5rem;
+    --spacing-large: 4rem;
+
+    /* Boldness */
+    --font-weight-normal: 400;
+    --font-weight-semi-bold: 600;
+    --font-weight-bold: 700;
+
+    /* Sizes */
+    --font-size-h1: 40px;
+    --font-size-h2: 32px;
+    --font-size-h3: 26px;
+    --font-size-p: 20px;
+}
+
+/* General values (body) */
+
+body {
+    height: 100%;
+    background-color: var(--color-footer);
+    padding: 0;
+    margin: 0;
+    font-family: 'Libertinus Serif', sans-serif;
+    text-decoration: none;
+    font-size: var(--font-size-p);
+    font-weight: var(--font-weight-normal);
+}
+
+h1 {
+    font-size: var(--font-size-h1);
+    font-weight: var(--font-weight-bold);
+    text-transform: uppercase;
+    margin-top: var(--spacing-normal);
+    margin-bottom: var(--spacing-small);
+}
+
+h2 {
+    font-size: var(--font-size-h2);
+    font-weight: var(--font-weight-bold);
+    text-transform: uppercase;
+    margin-top: var(--spacing-normal);
+    margin-bottom: var(--spacing-small);
+}
+
+h3 {
+    font-size: var(--font-size-h3);
+    font-weight: var(--font-weight-semi-bold);
+    text-transform: uppercase;
+    margin-top: var(--spacing-normal);
+    margin-bottom: var(--spacing-small);
+}
+
+p {
+    font-size: var(--font-size-p);
+    font-weight: var(--font-weight-normal);
+}
+
+
+/* Navigation */
+
+nav {
+    padding: var(--spacing-normal);
+    border: 0;
+    margin: 0;
+    background-color: var(--color-primary);
+    color: var(--color-on-primary);
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  font-size: var(--font-size-h3);
+  font-weight: var(--font-weight-semi-bold);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+nav a:visited {
+    color: var(--color-on-primary)
+}
+
+nav a:hover {
+    color: var(--color-on-primary-hover);
+}
+
+nav a:active {
+    color: var(--color-on-primary-active)
+}
+
+
+
+/* Main section */
+
+main {
+    padding: var(--spacing-normal);
+    border: 0;
+    margin: 0;
+    background-color: var(--color-bg);
+    min-height: 750px;
+}
+
+
+/* Footer */
+
+footer {
+    padding: var(--spacing-normal);
+    margin: 0;
+    height: 100%;
+    color: var(--color-on-footer);
+}
+
+footer .aligned {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+footer a {
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-semi-bold);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+footer a:visited {
+    color: var(--color-on-footer);
+}
+
+footer a:hover {
+    color: var(--color-on-footer-hover);
+}
+
+footer a:active {
+    color: var(--color-on-footer-active);
+}
+
+/* Gallery */
+
+ul.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: flex-start;
+}
+
+ul.gallery img {
+    max-height: 100%;         /* Scale down to fit container */
+    max-height: 300px;       /* Prevent very tall images */
+    height: auto;            /* Maintain aspect ratio */
+    width: auto;             /* Maintain aspect ratio */
+    display: block;
+    object-fit: contain;     /* Ensures no cropping */
+    border-radius: 0.5rem;
+}
+
+/* Button */
+
+a.button {
+    background-color: var(--color-secondary);
+    color: var(--color-on-secondary);
+    text-decoration: none;
+    padding: var(--spacing-smaller);
+    text-transform: uppercase;
+}
+
+a.button:visited {
+    color: var(--color-on-secondary);
+}
+
+a.button:hover {
+    background-color: var(--color-secondary-hover);
+    color: var(--color-on-secondary-hover);
+}
+
+a.button:active {
+    background-color: var(--color-secondary-active);
+    color: var(--color-on-secondary-active);
+}
