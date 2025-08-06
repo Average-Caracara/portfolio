@@ -79,6 +79,12 @@ h3 {
 p {
     font-size: var(--font-size-p);
     font-weight: var(--font-weight-normal);
+    max-width: 75%;
+}
+
+img {
+    max-height: 100%;
+    max-width: 100%;
 }
 
 
@@ -141,14 +147,6 @@ footer {
     margin: 0;
     height: 100%;
     color: var(--color-on-footer);
-}
-
-footer .aligned {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 2rem;
 }
 
 footer ul {
@@ -225,4 +223,44 @@ a.button:hover {
 a.button:active {
     background-color: var(--color-secondary-active);
     color: var(--color-on-secondary-active);
+}
+
+
+/* ------ UTILS ------ */
+
+/* Utils Class: ALIGNED */
+
+.aligned {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+/* Utils Class: IMAGE-TEXT */
+
+.image-text {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.image-text div {
+    flex: 1 1;
+    max-width: 768px;
+    min-width: 256px;
+}
+
+/* ------ Details ------ */
+
+#welcome img {
+    max-height: 256px;
+    padding-right: var(--spacing-large);
+}
+
+#gd-experience img {
+    padding-top: var(--spacing-normal);
+    max-height: 208px;
 }
