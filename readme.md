@@ -12,6 +12,7 @@ https://icons.getbootstrap.com/icons/youtube/
 
 ### Hosting locally
 
+NOTE: this has to be made OUTSIDE the directory (```cd ..```)
 ``` 
 python -m http.server 
 ```

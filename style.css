@@ -35,7 +35,7 @@
     /* Sizes */
     --font-size-h1: 40px;
     --font-size-h2: 32px;
-    --font-size-h3: 26px;
+    --font-size-h3: 22px;
     --font-size-p: 20px;
 }
 
@@ -255,9 +255,17 @@ a.button:active {
 
 /* ------ Details ------ */
 
+#welcome {
+    justify-content: center;
+}
+
 #welcome img {
     max-height: 256px;
     padding-right: var(--spacing-large);
+}
+
+#welcome h1 {
+    max-width: 512px;
 }
 
 #gd-experience img {
