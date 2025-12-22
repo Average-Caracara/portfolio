@@ -87,6 +87,11 @@ img {
     max-width: 100%;
 }
 
+video {
+    max-height: 100%;
+    max-width: 100%;
+}
+
 
 /* Navigation */
 
@@ -199,6 +204,10 @@ ul.gallery img {
     display: block;
     object-fit: contain;     /* Ensures no cropping */
     border-radius: 0.5rem;
+}
+
+video.small {
+    max-height: 300px;       /* Prevent very tall images */
 }
 
 /* Button */
