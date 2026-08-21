@@ -200,7 +200,7 @@ footer a {
 footer svg {
     fill: var(--color-on-footer);
     display: block;
-    width: 32px;
+    height: 32px;
     /* border: blue solid 1px; */
     position: inherit;
     /* border: 1px red solid; */
