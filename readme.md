@@ -6,7 +6,8 @@ https://fonts.google.com/specimen/Libertinus+Serif
 
 ### Icons
 
-https://icons.getbootstrap.com/icons/youtube/
+Old (TODO: remove): https://icons.getbootstrap.com/icons/youtube/
+New: https://fontawesome.com/search?f=brands
 
 ## Useful tips
 
