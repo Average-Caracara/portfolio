@@ -96,6 +96,7 @@ p {
 video {
     max-height: 100%;
     max-width: 100%;
+    margin-bottom: var(--spacing-small);
 }
 
 
