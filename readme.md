@@ -22,13 +22,14 @@ python -m http.server
 ## TODO
 
 ### High Priority
-- When you click an image, it should show on front.
 - Figure out a way to reuse the navbar, header, footer, etc. Even if it's just bash.
 - Rebranding
+- Jekyll??
 
 ### Medium Priority
 - Decide what to do with the Music and Visual Arts sections.
 - GAMES should go after GEOMETRY DASH
+- Put my name in a navbar
 
 ### Low Priority
 - Remove Bootstrap Icons references, if any
